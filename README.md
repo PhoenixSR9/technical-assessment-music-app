@@ -16,7 +16,7 @@ The data model for the song should look something like this, and be stored in on
 
 ```
 {
-    "isrc": <number>,
+    "isrc": "<string>",
     "title": "<string>",
     "artist": "<string>",
     "musicians": [
