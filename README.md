@@ -8,9 +8,9 @@ For the purposes of the exercise, pretend you're on a team working on a new webs
 ## Instructions
 Using Java8, and SpringBoot create a REST API with the following endpoints using the Controller Service Repository design pattern:
 
-- Add a song
+- Create a song
+- Read a song
 - Update a song
-- Get a song
 - Delete a song
 
 The data model for the song should look something like this, and be stored in one of [mongo, mysql, H2]. 
