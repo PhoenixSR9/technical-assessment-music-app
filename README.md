@@ -10,6 +10,7 @@ Using Java8, and SpringBoot create a REST API with the following endpoints using
 
 - Add a song
 - Update a song
+- Get a song
 - Delete a song
 
 The data model for the song should look something like this, and be stored in one of [mongo, mysql, H2]. 
