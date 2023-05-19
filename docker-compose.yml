@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+     - "27017:27017"
+    
+  web:
+    image: musicdemo
+    ports:
+     - "8080:8080"
+    environment:
+     - spring.data.mongodb.host=mongodb
+     - spring.data.mongodb.port=27017
+     - spring.data.mongodb.database=musicdemo
+     - webhook_url=${webhook_url}
+    depends_on:
+     - mongodb
